@@ -1,0 +1,15 @@
+$spacer-custom: (
+  "3b": $spacer * 1.25,
+  //doesn't appear in compiled css at all
+);
+$spacers: map-merge($spacers, $spacer-custom);
+
+$custom-colors: (
+  "custom-color-test": red,
+  //the color does appear in compiled css but not on all elements.
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+//issue seems linked to newer version of bootstrap, changing the way custom-color are created into classes
+//https://stackoverflow.com/questions/68755179/bootstrap-5-custom-theme-colors-not-updating-classes

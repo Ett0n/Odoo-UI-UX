@@ -1,0 +1,16 @@
+//required for function map-merge
+@import "../node_modules/bootstrap/scss/_functions";
+
+@import "variables-overrides";
+
+@import "../node_modules/bootstrap/scss/_variables";
+@import "../node_modules/bootstrap/scss/_mixins";
+@import "../node_modules/bootstrap/scss/_utilities";
+
+//edit variables map and use utilities API
+//  @import "variables-map-overrides";
+//it seems to merge only some items in the compiled css, looking forward to learn what I did wrong by your side!
+@import "utilities-map-overrides";
+
+//import bootstrap css
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

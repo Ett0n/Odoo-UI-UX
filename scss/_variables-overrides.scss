@@ -1,0 +1,22 @@
+//disable all rounded styling
+$enable-rounded: false;
+
+//colors
+$primary: #474388;
+$light: #c6ccd2;
+
+//slow down the spinner in tab2
+$spinner-animation-speed: 1s;
+
+//I chose to overrides the whole map because I didn't succeed doing it with map-merge
+//edit map spacers for 20px spacing with class 3b
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  3b: $spacer * 1.25,
+);
