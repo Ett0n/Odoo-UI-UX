@@ -8,25 +8,42 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <main class="container">
+    <main class="container" id="main">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center pt-5">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Switch class</button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="dropdownSelect">
+              <li><a class="dropdown-item" href="#" id="primary">primary</a></li>
+              <li><a class="dropdown-item" href="#" id="secondary">secondary</a></li>
+              <li><a class="dropdown-item" href="#" id="success">success</a></li>
+              <li><a class="dropdown-item" href="#" id="danger">danger</a></li>
+              <li><a class="dropdown-item" href="#" id="warning">warning</a></li>
+              <li><a class="dropdown-item" href="#" id="info">info</a></li>
+              <li><a class="dropdown-item" href="#" id="light">light</a></li>
+              <li><a class="dropdown-item" href="#" id="dark">dark</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div class="row">
         <div class="col-12 d-flex justify-content-center pt-5">
           <!--card component -->
-          <section class="card text-center w-100 mw-600p">
+          <section class="card text-center cus-dark w-100 mw-600p" id="classSwitcher">
             <!--main tab nav elements-->
-            <header class="card-header bg-dark border-0">
+            <header class="card-header">
               <ul class="nav nav-tabs card-header-tabs border-bottom-0" id="mainTabs" role="tablist">
                 <li class="nav-item me-2 bg-light">
-                  <button class="nav-link active px-3b" id="acMainTab1" data-bs-toggle="tab" data-bs-target="#mainTab1" role="tab" aria-controls="acMainTab1" aria-selected="true">Tab 1</button>
+                  <button class="nav-link active px-3b border-bottom-0" id="acMainTab1" data-bs-toggle="tab" data-bs-target="#mainTab1" role="tab" aria-controls="acMainTab1" aria-selected="true">Tab 1</button>
                 </li>
                 <li class="nav-item me-2 bg-light">
-                  <button class="nav-link px-3b" id="acMainTab2" data-bs-toggle="tab" data-bs-target="#mainTab2" role="tab" aria-controls="acMainTab2" aria-selected="false">Tab 2</button>
+                  <button class="nav-link px-3b border-bottom-0" id="acMainTab2" data-bs-toggle="tab" data-bs-target="#mainTab2" role="tab" aria-controls="acMainTab2" aria-selected="false">Tab 2</button>
                 </li>
                 <li class="nav-item me-2 bg-light">
-                  <button class="nav-link px-3b" id="acMainTab3" data-bs-toggle="tab" data-bs-target="#mainTab3" role="tab" aria-controls="acMainTab3" aria-selected="false">Tab 3</button>
+                  <button class="nav-link px-3b border-bottom-0" id="acMainTab3" data-bs-toggle="tab" data-bs-target="#mainTab3" role="tab" aria-controls="acMainTab3" aria-selected="false">Tab 3</button>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled bg-secondary text-light border-bottom-0" href="#" tabindex="-1">Disabled</a>
+                  <a class="nav-link disabled text-light border-bottom-0" href="#" tabindex="-1">Disabled</a>
                 </li>
               </ul>
             </header>
@@ -38,20 +55,20 @@
                 <div class="container text-start p-0">
                   <div class="py-4 ps-3b">
                     <h3 class="card-title pb-1 fs-4 fw-bold">Card title</h3>
-                    <h5 class="card-subtitle text-muted fw-bold">Card subtitle</h5>
+                    <h5 class="card-subtitle fw-bold">Card subtitle</h5>
                   </div>
                   <div class="row gx-0">
                     <!--inner tab nav -->
                     <div class="col-12 col-md-6">
                       <ul class="nav nav-tabs flex-column" id="innerTabs" role="tablist">
-                        <li class="nav-items">
-                          <button class="nav-link active w-100 text-start ps-3b py-3 border" data-bs-toggle="tab" data-bs-target="#innerTab1" role="tab" id="acInnerTab1" aria-controls="acInnerTab1" aria-selected="true">An item</button>
+                        <li class="nav-items bg-light">
+                          <button class="nav-link active w-100 text-start ps-3b py-3 border-start-0 border-end-0" data-bs-toggle="tab" data-bs-target="#innerTab1" role="tab" id="acInnerTab1" aria-controls="acInnerTab1" aria-selected="true">An item</button>
                         </li>
-                        <li class="nav-items">
-                          <button class="nav-link w-100 text-start ps-3b py-3 border" data-bs-toggle="tab" data-bs-target="#innerTab2" role="tab" id="acInnerTab2" aria-controls="acInnerTab2" aria-selected="false">A second item</button>
+                        <li class="nav-items bg-light">
+                          <button class="nav-link w-100 text-start ps-3b py-3 border-start-0 border-end-0" data-bs-toggle="tab" data-bs-target="#innerTab2" role="tab" id="acInnerTab2" aria-controls="acInnerTab2" aria-selected="false">A second item</button>
                         </li>
-                        <li class="nav-items">
-                          <button class="nav-link w-100 text-start ps-3b py-3 border" data-bs-toggle="tab" data-bs-target="#innerTab3" role="tab" id="acInnerTab3" aria-controls="acInnerTab3" aria-selected="false">A third item</button>
+                        <li class="nav-items bg-light">
+                          <button class="nav-link w-100 text-start ps-3b py-3 border-start-0 border-end-0" data-bs-toggle="tab" data-bs-target="#innerTab3" role="tab" id="acInnerTab3" aria-controls="acInnerTab3" aria-selected="false">A third item</button>
                         </li>
                       </ul>
                     </div>
@@ -92,20 +109,22 @@
                     <div class="col-12 col-md-8 text-start py-4 ps-3b pe-3">
                       <h3 class="card-title fs-4 fw-bold">Card title</h3>
                       <p class="card-text fs-5">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text text-secondary">Last updated <time datetime="PT3M">3 mins</time> ago</p>
+                      <p class="card-text subtext">Last updated <time datetime="PT3M">3 mins</time> ago</p>
                     </div>
                   </div>
                 </article>
               </div>
             </div>
 
-            <footer class="card-footer text-start ps-3b bg-dark text-white py-3">
-              <p class="m-0"><time datetime="2022-05-12 10:00">2</time> days ago</p>
+            <footer class="card-footer text-start ps-3b py-3">
+              <p class="card-text m-0"><time datetime="2022-05-12 10:00">2</time> days ago</p>
             </footer>
           </section>
         </div>
       </div>
     </main>
+    <script src="@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

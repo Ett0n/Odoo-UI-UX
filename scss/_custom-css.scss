@@ -1,0 +1,80 @@
+@mixin customColor($mainColor, $textColor, $dark: false) {
+  $primary: rgba($mainColor, 1);
+  $textColorRgba: rgba($textColor, 1);
+  $primaryRgba: rgba($mainColor, 0.95);
+  $borderRgba: rgba(0, 0, 0, 0.125);
+
+  .card-body {
+    background-color: $primaryRgba;
+  }
+  .card-header,
+  .card-footer {
+    background-color: $primary; //has to be Rgba variable to override native card-header bgc.
+  }
+  .card-text,
+  .text-secondary,
+  .card-title {
+    color: $textColorRgba;
+  }
+  .card-subtitle {
+    color: $textColorRgba;
+    filter: brightness(85%);
+  }
+  .nav-link.active {
+    background-color: $primaryRgba;
+    border-color: $borderRgba;
+    @if $dark {
+      color: rgba($textColor, 0.5);
+    } @else {
+      color: var(--bs-dark-rgb);
+    }
+  }
+  .nav-link:not(.active, .disabled) {
+    background-color: $primaryRgba;
+    color: $textColorRgba;
+  }
+  .disabled {
+    background-color: $borderRgba;
+  }
+  #innerTabs {
+    button {
+      border-color: $borderRgba;
+    }
+  }
+  .spinner-border {
+    border-color: $primaryRgba;
+    filter: brightness(80%);
+  }
+}
+
+.card.cus-primary {
+  @include customColor(var(--bs-primary-rgb), var(--bs-white-rgb));
+}
+
+.card.cus-secondary {
+  @include customColor(var(--bs-secondary-rgb), var(--bs-white-rgb));
+}
+
+.card.cus-success {
+  @include customColor(var(--bs-success-rgb), var(--bs-white-rgb));
+}
+
+.card.cus-danger {
+  @include customColor(var(--bs-danger-rgb), var(--bs-white-rgb));
+}
+
+.card.cus-warning {
+  @include customColor(var(--bs-warning-rgb), var(--bs-white-rgb));
+}
+
+.card.cus-info {
+  @include customColor(var(--bs-info-rgb), var(--bs-white-rgb));
+}
+
+.card.cus-light {
+  @include customColor(var(--bs-light-rgb), var(--bs-dark-rgb), $dark: true);
+}
+
+.card.cus-dark {
+  @include customColor(var(--bs-dark-rgb), var(--bs-white-rgb), $dark: true);
+}
