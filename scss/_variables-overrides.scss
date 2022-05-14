@@ -1,9 +1,11 @@
-//disable all rounded styling
-$enable-rounded: false;
-
 //colors
-$primary: #474388;
-$light: #c6ccd2;
+$primary: #342d50;
+$secondary: #321a37;
+$light: #e7d3cc;
+$dark: #13022b;
+
+$text-muted: #7b7491;
+$nav-tabs-link-active-color: #200a24;
 
 //slow down the spinner in tab2
 $spinner-animation-speed: 1s;

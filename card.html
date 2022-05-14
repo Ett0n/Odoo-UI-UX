@@ -15,18 +15,18 @@
           <section class="card text-center w-100 mw-600p">
             <!--main tab nav elements-->
             <header class="card-header bg-dark border-0">
-              <ul class="nav nav-tabs card-header-tabs border-bottom-0" id="mainTabs" role="tablist">
-                <li class="nav-item me-2 bg-light">
-                  <button class="nav-link active px-3b" id="acMainTab1" data-bs-toggle="tab" data-bs-target="#mainTab1" role="tab" aria-controls="acMainTab1" aria-selected="true">Tab 1</button>
+              <ul class="nav nav-tabs card-header-tabs" id="mainTabs" role="tablist">
+                <li class="nav-item me-2">
+                  <button class="nav-link active px-3b link-light" id="acMainTab1" data-bs-toggle="tab" data-bs-target="#mainTab1" role="tab" aria-controls="acMainTab1" aria-selected="true"><span class="cus-btn-ux"></span>Reasons</button>
                 </li>
-                <li class="nav-item me-2 bg-light">
-                  <button class="nav-link px-3b" id="acMainTab2" data-bs-toggle="tab" data-bs-target="#mainTab2" role="tab" aria-controls="acMainTab2" aria-selected="false">Tab 2</button>
+                <li class="nav-item me-2">
+                  <button class="nav-link px-3b link-light" id="acMainTab2" data-bs-toggle="tab" data-bs-target="#mainTab2" role="tab" aria-controls="acMainTab2" aria-selected="false"><span class="cus-btn-ux"></span>Loading</button>
                 </li>
-                <li class="nav-item me-2 bg-light">
-                  <button class="nav-link px-3b" id="acMainTab3" data-bs-toggle="tab" data-bs-target="#mainTab3" role="tab" aria-controls="acMainTab3" aria-selected="false">Tab 3</button>
+                <li class="nav-item me-2">
+                  <button class="nav-link px-3b link-light" id="acMainTab3" data-bs-toggle="tab" data-bs-target="#mainTab3" role="tab" aria-controls="acMainTab3" aria-selected="false"><span class="cus-btn-ux"></span>More...</button>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled bg-secondary text-light border-bottom-0" href="#" tabindex="-1">Disabled</a>
+                  <a class="nav-link disabled text-muted border-bottom-0" href="#" tabindex="-1">Disabled</a>
                 </li>
               </ul>
             </header>
@@ -37,36 +37,38 @@
               <div class="tab-pane fade show active" id="mainTab1" role="tabpanel">
                 <div class="container text-start p-0">
                   <div class="py-4 ps-3b">
-                    <h3 class="card-title pb-1 fs-4 fw-bold">Card title</h3>
-                    <h5 class="card-subtitle text-muted fw-bold">Card subtitle</h5>
+                    <h3 class="card-title pb-1 fs-4 fw-bold text-dark">Why you should hire me?</h3>
+                    <h5 class="card-subtitle text-secondary fw-bold">here are 3 reasons!</h5>
                   </div>
                   <div class="row gx-0">
                     <!--inner tab nav -->
                     <div class="col-12 col-md-6">
                       <ul class="nav nav-tabs flex-column" id="innerTabs" role="tablist">
                         <li class="nav-items">
-                          <button class="nav-link active w-100 text-start ps-3b py-3 border" data-bs-toggle="tab" data-bs-target="#innerTab1" role="tab" id="acInnerTab1" aria-controls="acInnerTab1" aria-selected="true">An item</button>
+                          <button class="nav-link active w-100 text-start ps-3b py-3 rounded-0 border link-primary" data-bs-toggle="tab" data-bs-target="#innerTab1" role="tab" id="acInnerTab1" aria-controls="acInnerTab1" aria-selected="true"><span class="cus-btn-ux"></span>I enjoy coding and learning</button>
                         </li>
                         <li class="nav-items">
-                          <button class="nav-link w-100 text-start ps-3b py-3 border" data-bs-toggle="tab" data-bs-target="#innerTab2" role="tab" id="acInnerTab2" aria-controls="acInnerTab2" aria-selected="false">A second item</button>
+                          <button class="nav-link w-100 text-start ps-3b py-3 rounded-0 border link-primary" data-bs-toggle="tab" data-bs-target="#innerTab2" role="tab" id="acInnerTab2" aria-controls="acInnerTab2" aria-selected="false"><span class="cus-btn-ux"></span>I love to design stuff</button>
                         </li>
                         <li class="nav-items">
-                          <button class="nav-link w-100 text-start ps-3b py-3 border" data-bs-toggle="tab" data-bs-target="#innerTab3" role="tab" id="acInnerTab3" aria-controls="acInnerTab3" aria-selected="false">A third item</button>
+                          <button class="nav-link w-100 text-start ps-3b py-3 rounded-0 border link-primary" data-bs-toggle="tab" data-bs-target="#innerTab3" role="tab" id="acInnerTab3" aria-controls="acInnerTab3" aria-selected="false"><span class="cus-btn-ux"></span>I'm friendly!</button>
                         </li>
                       </ul>
                     </div>
 
                     <!-- inside inner tabs, picture associated with tabs -->
                     <div class="col-12 col-md-6">
-                      <div class="tab-content">
-                        <div class="tab-pane fade show active" id="innerTab1" role="tabpanel">
-                          <img src="https://via.placeholder.com/300x173/0000FF/F2FFFB?text=Pic-1" alt="" class="h-100 w-100" />
+                      <div class="tab-content w-100 h-100 mh-100">
+                        <div class="tab-pane fade show active w-100 h-100" id="innerTab1" role="tabpanel">
+                          <img src="img/enjoy_code.png" alt="A web code project in scss and html" class="h-100 w-100 cus-img-cover" />
                         </div>
-                        <div class="tab-pane fade" id="innerTab2" role="tabpanel">
-                          <img src="https://via.placeholder.com/300x173/FFFF00/171416/?text=Pic-2" alt="" class="h-100 w-100" />
+
+                        <div class="tab-pane fade w-100 h-100" id="innerTab2" role="tabpanel">
+                          <img src="img/enjoy_design.png" alt="Airport UI design and prototyping on figma" class="cus-img-cover" />
                         </div>
-                        <div class="tab-pane fade" id="innerTab3" role="tabpanel">
-                          <img src="https://via.placeholder.com/300x173/0B0C0D/FFFBFA?text=Pic-3" alt="" class="h-100 w-100" />
+
+                        <div class="tab-pane fade w-100 h-100" id="innerTab3" role="tabpanel">
+                          <img src="img/enjoy_life.jpg" alt="A wonderful picture of Mathieu and Shrek at Tussauds' museum" class="cus-img-cover" />
                         </div>
                       </div>
                     </div>
@@ -77,8 +79,10 @@
               <!--tab 2 -->
               <div class="tab-pane fade" id="mainTab2" role="tabpanel">
                 <div class="d-flex flex-column align-items-center py-5">
-                  <p class="card-text pb-3 fs-5">Loading...</p>
-                  <div class="spinner-border" role="status" style="height: 4rem; width: 4rem; border-bottom-color: transparent; border-left-color: transparent"></div>
+                  <div class="spinner-border text-dark d-flex align-items-center justify-content-center" role="status" style="height: 6rem; width: 6rem; border-left-color: transparent">
+                    <div class="cus-loading">Loading...</div>
+                    <!-- could do with absolute or relative positioning as well-->
+                  </div>
                 </div>
               </div>
 
@@ -86,13 +90,13 @@
               <div class="tab-pane fade" id="mainTab3" role="tabpanel">
                 <article class="container p-0">
                   <div class="row gx-0 py-2 py-md-0">
-                    <div class="col-12 col-md-4">
-                      <img src="https://via.placeholder.com/240x280/FF0000/F2FFFB?text=IMAGE" class="img-fluid" alt="" />
+                    <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+                      <img src="img/me.jpg" class="p-2 p-md-0 rounded-circle w-75" alt="Formal profile picture of Mathieu" />
                     </div>
-                    <div class="col-12 col-md-8 text-start py-4 ps-3b pe-3">
-                      <h3 class="card-title fs-4 fw-bold">Card title</h3>
-                      <p class="card-text fs-5">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text text-secondary">Last updated <time datetime="PT3M">3 mins</time> ago</p>
+                    <div class="col-12 col-md-8 text-start py-4 ps-4 ps-md-0 pe-4">
+                      <h4 class="text-dark card-title">Hi, I'm Mathieu!</h4>
+                      <p class="card-text">I enjoy fitness, cycling and board games with friends! My favourite colour is purple and I'm a cat person (but don't worry I like dogs too).</p>
+                      <p class="card-text text-secondary fw-light">Ps: I won't use !important, I promise.</p>
                     </div>
                   </div>
                 </article>
@@ -100,7 +104,9 @@
             </div>
 
             <footer class="card-footer text-start ps-3b bg-dark text-white py-3">
-              <p class="m-0"><time datetime="2022-05-12 10:00">2</time> days ago</p>
+              <div>
+                <p class="card-text m-0"><time datetime="2022-05-12 10:00">2</time> days ago, posted by <a class="link-light" href="https://www.mathieunotte.me">Mathieu</a>.</p>
+              </div>
             </footer>
           </section>
         </div>

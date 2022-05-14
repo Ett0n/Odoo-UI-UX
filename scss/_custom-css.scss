@@ -1,0 +1,31 @@
+//
+button.active {
+  span.cus-btn-ux {
+    display: inline-block;
+
+    position: relative;
+    bottom: 2px;
+    margin-right: 0.5rem;
+
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background-color: var(--bs-dark);
+  }
+}
+
+.cus-img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cus-loading {
+  animation: rotationRevert 1s infinite linear;
+}
+
+@keyframes rotationRevert {
+  to {
+    transform: rotate(-360deg);
+  }
+}
