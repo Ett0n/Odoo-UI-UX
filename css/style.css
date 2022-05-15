@@ -12015,4 +12015,15 @@ fieldset:disabled .btn {
     display: none !important;
   }
 }
+
+button.active span.cus-btn-ux {
+  display: inline-block;
+  position: relative;
+  bottom: 2px;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: var(--bs-dark);
+}
 /*# sourceMappingURL=style.css.map */

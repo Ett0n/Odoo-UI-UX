@@ -17,16 +17,13 @@
             <header class="card-header bg-dark border-0">
               <ul class="nav nav-tabs card-header-tabs border-bottom-0" id="mainTabs" role="tablist">
                 <li class="nav-item me-2 bg-light">
-                  <button class="nav-link active px-3b" id="acMainTab1" data-bs-toggle="tab" data-bs-target="#mainTab1" role="tab" aria-controls="acMainTab1" aria-selected="true">Tab 1</button>
+                  <button class="nav-link active px-3b" id="acMainTab1" data-bs-toggle="tab" data-bs-target="#mainTab1" role="tab" aria-controls="acMainTab1" aria-selected="true">Home</button>
                 </li>
                 <li class="nav-item me-2 bg-light">
-                  <button class="nav-link px-3b" id="acMainTab2" data-bs-toggle="tab" data-bs-target="#mainTab2" role="tab" aria-controls="acMainTab2" aria-selected="false">Tab 2</button>
+                  <button class="nav-link px-3b" id="acMainTab2" data-bs-toggle="tab" data-bs-target="#mainTab2" role="tab" aria-controls="acMainTab2" aria-selected="false">Loading</button>
                 </li>
                 <li class="nav-item me-2 bg-light">
-                  <button class="nav-link px-3b" id="acMainTab3" data-bs-toggle="tab" data-bs-target="#mainTab3" role="tab" aria-controls="acMainTab3" aria-selected="false">Tab 3</button>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled bg-secondary text-light border-bottom-0" href="#" tabindex="-1">Disabled</a>
+                  <button class="nav-link px-3b" id="acMainTab3" data-bs-toggle="tab" data-bs-target="#mainTab3" role="tab" aria-controls="acMainTab3" aria-selected="false">Last article</button>
                 </li>
               </ul>
             </header>
@@ -45,13 +42,13 @@
                     <div class="col-12 col-md-6">
                       <ul class="nav nav-tabs flex-column" id="innerTabs" role="tablist">
                         <li class="nav-items">
-                          <button class="nav-link active w-100 text-start ps-3b py-3 border" data-bs-toggle="tab" data-bs-target="#innerTab1" role="tab" id="acInnerTab1" aria-controls="acInnerTab1" aria-selected="true">An item</button>
+                          <button class="nav-link active w-100 text-start ps-3b py-3 border" data-bs-toggle="tab" data-bs-target="#innerTab1" role="tab" id="acInnerTab1" aria-controls="acInnerTab1" aria-selected="true"><span class="cus-btn-ux"></span>Blue placeholder 1</button>
                         </li>
                         <li class="nav-items">
-                          <button class="nav-link w-100 text-start ps-3b py-3 border" data-bs-toggle="tab" data-bs-target="#innerTab2" role="tab" id="acInnerTab2" aria-controls="acInnerTab2" aria-selected="false">A second item</button>
+                          <button class="nav-link w-100 text-start ps-3b py-3 border" data-bs-toggle="tab" data-bs-target="#innerTab2" role="tab" id="acInnerTab2" aria-controls="acInnerTab2" aria-selected="false"><span class="cus-btn-ux"></span>Yellow placeholder 2</button>
                         </li>
                         <li class="nav-items">
-                          <button class="nav-link w-100 text-start ps-3b py-3 border" data-bs-toggle="tab" data-bs-target="#innerTab3" role="tab" id="acInnerTab3" aria-controls="acInnerTab3" aria-selected="false">A third item</button>
+                          <button class="nav-link w-100 text-start ps-3b py-3 border" data-bs-toggle="tab" data-bs-target="#innerTab3" role="tab" id="acInnerTab3" aria-controls="acInnerTab3" aria-selected="false"><span class="cus-btn-ux"></span>Black placeholder 3</button>
                         </li>
                       </ul>
                     </div>
@@ -60,13 +57,13 @@
                     <div class="col-12 col-md-6">
                       <div class="tab-content">
                         <div class="tab-pane fade show active" id="innerTab1" role="tabpanel">
-                          <img src="https://via.placeholder.com/300x173/0000FF/F2FFFB?text=Pic-1" alt="" class="h-100 w-100" />
+                          <img src="https://via.placeholder.com/300x173/0000FF/F2FFFB?text=Pic-1" alt="A wonderful blue squared monochrome placeholder with Pic-1 written in white" class="h-100 w-100" />
                         </div>
                         <div class="tab-pane fade" id="innerTab2" role="tabpanel">
-                          <img src="https://via.placeholder.com/300x173/FFFF00/171416/?text=Pic-2" alt="" class="h-100 w-100" />
+                          <img src="https://via.placeholder.com/300x173/FFFF00/171416/?text=Pic-2" alt="A wonderful yellow squared monochrome placeholder with Pic-2 written in black" class="h-100 w-100" />
                         </div>
                         <div class="tab-pane fade" id="innerTab3" role="tabpanel">
-                          <img src="https://via.placeholder.com/300x173/0B0C0D/FFFBFA?text=Pic-3" alt="" class="h-100 w-100" />
+                          <img src="https://via.placeholder.com/300x173/0B0C0D/FFFBFA?text=Pic-3" alt="A wonderful black squared monochrome placeholder with Pic-3 written in white" class="h-100 w-100" />
                         </div>
                       </div>
                     </div>
@@ -77,8 +74,8 @@
               <!--tab 2 -->
               <div class="tab-pane fade" id="mainTab2" role="tabpanel">
                 <div class="d-flex flex-column align-items-center py-5">
-                  <p class="card-text pb-3 fs-5">Loading...</p>
-                  <div class="spinner-border" role="status" style="height: 4rem; width: 4rem; border-bottom-color: transparent; border-left-color: transparent"></div>
+                  <p class="card-text pb-3 fs-5">Infinite Loading...</p>
+                  <img class="spinner-border" src="img/loader.svg" role="status" style="width: 5rem; height: 5rem; border-color: transparent" />
                 </div>
               </div>
 
@@ -87,12 +84,14 @@
                 <article class="container p-0">
                   <div class="row gx-0 py-2 py-md-0">
                     <div class="col-12 col-md-4">
-                      <img src="https://via.placeholder.com/240x280/FF0000/F2FFFB?text=IMAGE" class="img-fluid" alt="" />
+                      <img src="https://via.placeholder.com/240x280/FF0000/F2FFFB?text=IMAGE" class="img-fluid" alt="A wonderful rectangular red monochrome placeholder with IMAGE written in white" />
                     </div>
                     <div class="col-12 col-md-8 text-start py-4 ps-3b pe-3">
                       <h3 class="card-title fs-4 fw-bold">Card title</h3>
                       <p class="card-text fs-5">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text text-secondary">Last updated <time datetime="PT3M">3 mins</time> ago</p>
+                      <p class="card-text text-secondary">
+                        <small>Last updated <time datetime="PT3M">3 mins</time> ago</small>
+                      </p>
                     </div>
                   </div>
                 </article>
